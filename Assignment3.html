@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharingan Academy</title>
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/originals/5e/3a/fe/5e3afe4a9c077255c1061920c6d7ebf4.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #ece5e5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #c00;
+            box-shadow: 0 0 15px rgba(192, 0, 0, 0.5);
+        }
+    
+        h1 {
+            color: #ff6b6b;
+            text-decoration: underline;
+            text-transform: uppercase;
+            background-color: rgba(70, 0, 50, 0.8);
+            font-size: 30px;
+            padding: 10px;
+            text-align: center;
+            border-left: 5px solid #c00;
+        }
+        
+        h2 {
+            color: #ff9e9e;
+            background-color: rgba(23, 2, 97, 0.7);
+            padding: 8px;
+            border-bottom: 2px solid #c00;
+        }
+        
+        h3, h4, h5, h6 {
+            color: #ffcc66;
+            text-decoration: underline;
+            text-transform: uppercase;
+        }
+        
+        #gold {
+            background-color: rgba(224, 178, 178, 0.3);
+            color: #ffcc66;
+            padding: 5px;
+        }
+
+        .Welcome {
+            color: #5f9ea0;
+            text-transform: uppercase;
+            background-color: rgba(248, 226, 170, 0.3);
+            padding: 5px;
+        }        
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        table, th, td {
+            border: 1px solid #c00;
+        }
+        
+        th {
+            background-color: rgba(70, 0, 50, 0.8);
+            color: white;
+            padding: 10px;
+        }
+        
+        td {
+            padding: 8px;
+            color: #ffcc66;
+        }
+        
+        input, label {
+            margin: 5px 0;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"] {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid #c00;
+            color: white;
+            padding: 5px;
+            width: 200px;
+        }
+        
+        details {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 3px solid #c00;
+        }
+        
+        summary {
+            color: #ff6b6b;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        address {
+            font-style: normal;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-left: 3px solid #c00;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(192, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            margin: 20px 0;
+        }
+        
+        .sharingan {
+            text-align: center;
+            font-size: 24px;
+            color: #c00;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sharingan">✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧ SHARINGAN ACADEMY ✧⋄⋆⋅⋆⋄✧⋄⋆⋅⋆⋄✧</div>
+        <i><h1>Welcome to the Hidden Leaf</h1></i>
+        <u><h2>Ninja Development Program</h2></u>
+        <h3 class="run" id="gold">Frontend Jutsu</h3>
+        <b><h4 class="Welcome" id="selector">Backend Ninjutsu</h4></b>
+        <h5>Chakra Control and Genjutsu</h5>
+        <h6>HTML and CSS Techniques</h6>
+        <p>This is where you train to become a elite software ninja</p>
+        <br>
+        <hr>
+        <p><h2>Shinobi Registration</h2></p>
+        <div>
+            <label for="id1">Name:</label>
+            <input type="text" id="id1" required>
+        </div>
+        <br>
+        <div>
+            <label>Gender:</label><br>
+            <input type="Radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="Radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Phone number:</label>
+            <input type="number" id="phone" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="confirm-password">Confirm password:</label>
+            <input type="password" id="confirm-password" required>
+        </div>
+        <br>
+        <hr>
+        <h2>Select Your Ninja Specializations</h2>
+        <div>
+            <input type="checkbox" id="java" name="courses">
+            <label for="java">Taijutsu (Java)</label><br>
+            <input type="checkbox" id="python" name="courses">
+            <label for="python">Genjutsu (Python)</label><br>
+            <input type="checkbox" id="html" name="courses">
+            <label for="html">Shurikenjutsu (HTML/CSS)</label><br>
+            <input type="checkbox" id="javascript" name="courses">
+            <label for="javascript">Sharingan (JavaScript)</label><br>
+        </div>
+        <hr>
+        <h2>Current Genin</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Specialization</th>
+            </tr>
+            <tr>
+                <td>Naruto</td>
+                <td>21</td>
+                <td>Taijutsu</td>
+            </tr>
+            <tr>
+                <td>Sasuke</td>
+                <td>20</td>
+                <td>Sharingan</td>
+            </tr>
+            <tr>
+                <td>Sakura</td>
+                <td>20</td>
+                <td>Medical Ninjutsu</td>
+            </tr>   
+        </table>
+        <hr>
+        <h2>About the Jutsu</h2>
+        <details>
+            <summary>Taijutsu, Genjutsu, Shurikenjutsu, Sharingan</summary>
+            <p>Our academy teaches the most powerful techniques in the ninja world. Taijutsu (Java) focuses on physical combat and strong foundations. Genjutsu (Python) manipulates the opponent's senses with illusions. Shurikenjutsu (HTML/CSS) provides the tools for precise attacks. The Sharingan (JavaScript) grants dynamic perception and powerful ocular techniques. Master these to become a complete shinobi capable of taking on any mission.</p>
+        </details>
+        <hr>
+        <address>
+            Hidden Leaf Village,<br>
+            Fire Country,<br>
+            Land of Fire,<br>
+            Shinobi World
+        </address>
+        <div class="sharingan">火影忍者 - BELIEVE IT!</div>
+    </div>
+</body>
+</html>
