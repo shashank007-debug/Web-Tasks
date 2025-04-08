@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            border: 20px solid rgb(250, 90, 90);
+            margin: 10px 20px 30px 20px;
+            padding: 10px 40px;
+        }
+        #d1{
+            border: 2px solid rgb(69, 24, 24);
+            height: 200px;
+            width: 200px;
+            background-color: rgb(222, 104, 41);
+        }
+        #d2{
+            border: 2px solid rgb(245, 24, 24);
+            margin-top: 35px;
+            margin-left: 14px;
+            height: 120px;
+            width: 160px;
+        }
+        div p{
+            color: rgb(247, 227, 227);
+        }
+        div + p{
+            border: 2px solid rgb(245, 24, 24);
+            margin-top: 10px;
+            margin-left: 14px;
+            height: 120px;
+            width: 160px;
+        }
+        div > p{
+            color: rgb(247, 227, 227);
+        }
+        div ~ p{
+            color: rgb(247, 227, 227);
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">Hello, world!</p>
+    <div id="d1">
+        <div id="d2">
+            <img src="Uciha Itachi.jpeg" height="120px" width="160px" alt="Itachi Uchiha">
+            <p>Itachi Uchiha</p>
+            <div>
+                <p>Itachi Uchiha is a fictional character in the Naruto manga and anime series created by Masashi Kishimoto. He is a member of the Uchiha clan and is known for his exceptional skills as a ninja, particularly in genjutsu and ninjutsu. Itachi is also recognized for his tragic backstory, which involves sacrificing his own happiness for the sake of his younger brother, Sasuke Uchiha.</p>
+                <p>Itachi's character is complex, as he is initially portrayed as a villain but later revealed to have noble intentions. He is a member of the Akatsuki organization and plays a significant role in the series' overarching plot. Itachi's signature techniques include the Sharingan, Tsukuyomi, and Amaterasu.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
